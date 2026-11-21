@@ -64,3 +64,34 @@ Statuses change only when actual evidence lands. Optional modules stay
 `Not completed / Optional` unless I actually do them.
 
 ## Layout
+```text
+W3-PM1-JTR/        john/, johnny/, hash-analysis/, screenshots/, report/
+W3-PM2-NW-Tools/   commands/, outputs/, screenshots/, report/
+OPTIONAL/          W3-OPTIONAL1-AI-JTR/, W3-OPTIONAL2-Mediroza/
+documentation/     concepts, methodology, defenses, ethics, troubleshooting, lessons
+evidence/          evidence-index.md + screenshots/
+```
+
+Supporting docs: [password-security](documentation/password-security.md),
+[hashing-vs-encryption](documentation/hashing-vs-encryption.md),
+[attack-methodology](documentation/attack-methodology.md),
+[defensive-recommendations](documentation/defensive-recommendations.md),
+[ethics-and-scope](documentation/ethics-and-scope.md).
+
+## Security note
+
+No real third-party passwords, credentials, API keys, tokens, private keys,
+patient data, or unredacted third-party hashes are committed here. Cracking
+evidence uses only the authorized training PDF (or a file I own). Sensitive
+output gets redacted before commit. See [.gitignore](.gitignore).
+
+## Evidence standard
+
+1. Run the command against the authorized file.
+2. Save raw output (`john/commands.txt`, `results.txt`, etc.).
+3. Screenshot with the exact filename the module README asks for.
+4. Write up `report/findings.md` with what actually happened.
+5. Never fabricate output, hashes, passwords, or completion.
+
+---
+```text
